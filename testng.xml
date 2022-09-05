@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Assignment11">
+
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="url" value="https://www.shopclues.com/"></parameter>
+
+	<test thread-count="5" name="HomeandKitchen">
+		<parameter name="ProductCategory" value="HomeKitchen"></parameter>
+		<parameter name="Product" value="curtainss"></parameter>
+		<classes>
+			<class name="test.Base" />
+			<class name="test.LoginValidation2" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Essentials">
+		<parameter name="ProductCategory" value="Daily Essentials"></parameter>
+		<parameter name="Product" value="Coffee &amp; Tea"></parameter>
+		<classes>
+			<class name="test.Base" />
+			<class name="test.Essentials2" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Mobile">
+		<parameter name="ProductCategory" value="MobileElectronics"></parameter>
+		<parameter name="Product" value="Cabless"></parameter>
+		<classes>
+			<class name="test.Base" />
+			<class name="test.Mobiles_Electronics2" />
+		</classes>
+	</test>
+
+
+
+</suite>
+
